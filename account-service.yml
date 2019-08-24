@@ -1,0 +1,21 @@
+security:
+  oauth2:
+    client:
+      clientId: account-service
+      client-secret: XUoJBrTtqXBonU5zMVzSUtrLPKRQztLUQE4poDoIR1QdcDfGgnGgJO5wbFC7xCEL
+      accessTokenUri: http://gateway/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+spring:
+  data:
+    mongodb:
+      database: piggymetrics
+
+server:
+  servlet:
+    context-path: /accounts
+
+feign:
+  hystrix:
+    enabled: true

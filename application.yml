@@ -1,0 +1,19 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 20000
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://gateway/uaa/users/current

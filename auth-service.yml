@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: piggymetrics
+
+server:
+  servlet:
+    context-path: /uaa
+
+ACCOUNT_SERVICE_PASSWORD: XUoJBrTtqXBonU5zMVzSUtrLPKRQztLUQE4poDoIR1QdcDfGgnGgJO5wbFC7xCEL
