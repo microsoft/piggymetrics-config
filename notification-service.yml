@@ -27,12 +27,13 @@ backup:
 spring:
   data:
     mongodb:
-      database: piggymetrics
+      database: ${MONGODB_DATABASE}
+      uri: ${MONGODB_URI}
   mail:
     host: smtp.gmail.com
     port: 465
-    username: dev-user
-    password: dev-password
+    username: ${SMTP_USER}
+    password: ${SMTP_PASSWORD}
     properties:
       mail:
         smtp:

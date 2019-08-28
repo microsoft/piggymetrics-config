@@ -2,7 +2,7 @@ security:
   oauth2:
     client:
       clientId: account-service
-      client-secret: XUoJBrTtqXBonU5zMVzSUtrLPKRQztLUQE4poDoIR1QdcDfGgnGgJO5wbFC7xCEL
+      client-secret: ${ACCOUNT_SERVICE_PASSWORD}
       accessTokenUri: http://gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server
@@ -10,7 +10,8 @@ security:
 spring:
   data:
     mongodb:
-      database: piggymetrics
+      database: ${MONGODB_DATABASE}
+      uri: ${MONGODB_URI}
 
 server:
   servlet:

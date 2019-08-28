@@ -9,7 +9,8 @@ security:
 spring:
   data:
     mongodb:
-      database: piggymetrics
+      database: ${MONGODB_DATABASE}
+      uri: ${MONGODB_URI}
 
 server:
   servlet:
