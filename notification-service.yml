@@ -27,13 +27,13 @@ backup:
 spring:
   data:
     mongodb:
-      database: ${MONGODB_DATABASE}
-      uri: ${MONGODB_URI}
+      database: ${mongodb_database}
+      uri: ${mongodb_uri}
   mail:
     host: smtp.gmail.com
     port: 465
-    username: ${SMTP_USER}
-    password: ${SMTP_PASSWORD}
+    username: ${smtp_user}
+    password: ${smtp_password}
     properties:
       mail:
         smtp:

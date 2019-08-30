@@ -2,7 +2,7 @@ security:
   oauth2:
     client:
       clientId: account-service
-      client-secret: ${ACCOUNT_SERVICE_PASSWORD}
+      client-secret: ${account_service_password}
       accessTokenUri: http://gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server
@@ -10,8 +10,8 @@ security:
 spring:
   data:
     mongodb:
-      database: ${MONGODB_DATABASE}
-      uri: ${MONGODB_URI}
+      database: ${mongodb_database}
+      uri: ${mongodb_uri}
 
 server:
   servlet:
