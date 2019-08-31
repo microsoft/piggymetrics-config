@@ -7,3 +7,5 @@ spring:
 server:
   servlet:
     context-path: /uaa
+
+ACCOUNT_SERVICE_PASSWORD: ${account_service_password}
