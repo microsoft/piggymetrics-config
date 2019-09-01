@@ -2,6 +2,7 @@ security:
   oauth2:
     client:
       clientId: statistics-service
+      client-secret: my-statistics-service-password
       accessTokenUri: http://gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server

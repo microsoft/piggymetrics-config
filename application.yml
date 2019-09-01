@@ -17,3 +17,10 @@ security:
   oauth2:
     resource:
       user-info-uri: http://gateway/uaa/users/current
+
+spring:
+  rabbitmq:
+    host: ${rabbitmq_host}
+    port: ${rabbitmq_port}
+    username: ${rabbitmq_username}
+    password: ${rabbitmq_password}

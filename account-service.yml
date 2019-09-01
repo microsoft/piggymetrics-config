@@ -2,7 +2,7 @@ security:
   oauth2:
     client:
       clientId: account-service
-      client-secret: my-account-password
+      client-secret: my-account-service-password
       accessTokenUri: http://gateway/uaa/oauth/token
       grant-type: client_credentials
       scope: server
