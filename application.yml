@@ -20,7 +20,7 @@ security:
 
 spring:
   rabbitmq:
-    host: ${rabbitmq_host}
-    port: ${rabbitmq_port}
-    username: ${rabbitmq_username}
-    password: ${rabbitmq_password}
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}

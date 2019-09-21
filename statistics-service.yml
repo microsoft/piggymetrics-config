@@ -10,8 +10,8 @@ security:
 spring:
   data:
     mongodb:
-      database: ${mongodb_database}
-      uri: ${mongodb_uri}
+      database: ${MONGODB_DATABASE}
+      uri: ${MONGODB_URI}
 
 server:
   servlet:
