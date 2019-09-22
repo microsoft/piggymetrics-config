@@ -19,6 +19,11 @@ security:
       user-info-uri: http://gateway/uaa/users/current
 
 spring:
+  sleuth:
+    sampler:
+      probability: 1
+
+spring:
   rabbitmq:
     host: ${RABBITMQ_HOST}
     port: ${RABBITMQ_PORT}
