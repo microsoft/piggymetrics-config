@@ -1,0 +1,21 @@
+security:
+  oauth2:
+    client:
+      clientId: statistics-service
+      client-secret: my-statistics-service-password
+      accessTokenUri: http://gateway/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+spring:
+  data:
+    mongodb:
+      database: ${MONGODB_DATABASE}
+      uri: ${MONGODB_URI}
+
+server:
+  servlet:
+    context-path: /statistics
+
+rates:
+  url: https://api.exchangeratesapi.io
