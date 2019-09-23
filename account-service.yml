@@ -12,9 +12,6 @@ spring:
     mongodb:
       database: ${MONGODB_DATABASE}
       uri: ${MONGODB_URI}
-  zipkin:
-    sender:
-      type: web
 
 server:
   servlet:
